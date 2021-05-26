@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.section-career {
+  max-width: 1040px;
+  margin: 30px auto 150px;
+  padding-top: 100px;
+  position: relative;
+}
+.section-career h2 {
+  text-align: left;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+.career-list {
+  background-color: #fff;
+  padding: 30px 30px;
+  box-shadow: 4px 4px 4px #B2A3A3;
+}
+.career-list ul li {
+  list-style: none;
+  text-align: left;
+}
+.career-list ul li h3 {
+  margin-bottom: 10px;
+}
+.career-list ul li p {
+  margin-bottom: 30px;
+  line-height: 3.0rem;
+}
+.about-rose1 {
+  position: absolute;
+    right: -46px;
+    top: 104px;
+}
+.about-rose2 {
+  position: absolute;
+  left: -55px;
+  bottom: -80px;
+}
+
+@media (max-width: 900px) {
+  .section-career {
+    max-width: 325px;
+  margin: 0 auto 150px;
+    padding-top: 0;
+  }
+  .about-rose1 {
+        right: -42px;
+    top: -15px;
+  }
+  .about-rose2 {
+        left: -43px;
+    bottom: -105px;
+  }
+}
+
+.message-box {
+  display: flex;
+}
+.section-message {
+  margin-bottom: 60px;
+}
+.section-message h2 {
+  font-size:2.0rem;
+  max-width: 1040px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+.note-rose {
+  width: 491px;
+  height: 398px;
+  margin: 118px 0 0 170px;
+  z-index: 3;
+  position: absolute;
+}
+.dot-bg {
+  width: 930px;
+  height: 640px;
+  z-index: 1;
+  margin: 0 0 0 500px;
+  overflow: hidden;
+}
+.section-message p {
+  background-color: #fff;
+    max-width: 650px;
+    padding: 60px 30px;
+    text-align: left;
+    line-height: 3.0rem;
+    z-index: 5;
+    position: absolute;
+    margin: 190px 0 0 610px;
+}
+
+@media (max-width: 900px) {
+  .section-message {
+    margin-top: 100px;
+  }
+  .section-message h2 {
+    max-width: 325px;
+  }
+  .note-rose {
+    width: 325px;
+    height: 263px;
+    margin: 50px 0 0 0px;
+    z-index: 3;
+    position: absolute;
+  }
+  .dot-bg {
+      width: 500px;
+    height: 740px;
+    object-fit: cover;
+    margin: 180px auto 0px;
+  }
+  .section-message p {
+    max-width: 265px;
+        margin: 350px 25px 0 0;
+  }
+  .message-box {
+        max-width: 325px;
+    margin: 0 auto;
+  }
+}
+
+.section-hobby {
+  max-width: 1040px;
+  margin: 0 auto 70px;
+}
+.section-hobby h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.section-hobby ul li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 50px;
+}
+.hobby-description {
+  background-color: #fff;
+  text-align: left;
+  padding: 20px 40px;
+}
+.section-hobby ul li img {
+  margin-right: 30px;
+}
+.section-hobby ul li h3 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .section-hobby {
+    max-width: 261px;
+    margin-bottom: 150px;
+  }
+  .section-hobby ul li img {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .section-hobby ul li {
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hobby-description {
+    padding: 20px 20px 40px;
+  }
+}

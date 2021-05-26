@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.section-website2 {
+  margin-top:50px ;
+  margin-bottom: 70px;
+}
+.section-website2_name {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.section-website2 h2 {
+  text-align: left;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+.section-website2 h3 {
+  text-align: left;
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+}
+
+.section-website2 h4  {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.section-website2 p {
+  text-align: left;
+}
+.site-image {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ADADAD;
+  margin-bottom: 60px;
+}
+.portfolio-site {
+  margin-bottom: 40px;
+}
+
+.site-document {
+  margin-bottom: 100px;
+}
+.document-pic1 {
+  margin-bottom: 30px;
+}
+.other-site {
+  max-width: 1040px;
+  margin: 30px auto 30px;
+  text-align: left;
+}
+.other-site img {
+  margin-right: 30px;
+}
+
+@media (max-width: 900px) {
+  .section-website2_name {
+    max-width: 325px;
+  }
+  .section-website2 h4 {
+    font-size: 1.6rem;
+  }
+  .portfolio-site {
+    max-width: 325px;
+  }
+  .document-pic1 {
+    max-width: 325px;
+  }
+  .other-site  {
+    max-width: 325px;
+  }
+  .other-site img {
+    margin-bottom: 40px;
+  }
+}

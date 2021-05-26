@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="143" height="29" viewBox="0 0 143 29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #333;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="arrow">
+    <path id="シェイプ_1" data-name="シェイプ 1" class="cls-1" d="M55,230H185l-20-20" transform="translate(-55 -207)"/>
+  </g>
+</svg>

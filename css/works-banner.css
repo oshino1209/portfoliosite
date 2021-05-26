@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 900px) {
+  .section-works_banner {
+    max-width: 760px;
+    margin: 70px auto 60px;
+  }
+
+  .section-works_banner h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    text-align: left
+  }
+  .section-works_banner h3 {
+    font-size: 2.0rem;
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  .banner-name {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .banner-name li {
+    list-style: none;
+    margin-right: 30px;
+    margin-bottom: 1位９お0px;
+  }
+  .banner-name li a {
+    text-decoration: none;
+    color: #7E7E7E;
+  }
+  .banner-production li {
+    list-style: none;
+    margin-bottom: 70px;
+  }
+  .section-works_banner ul li img {
+    margin-bottom: 30px;
+  }
+  .banner-description {
+    text-align: left;
+  }
+  .banner-description p {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-works_banner {
+    max-width: 325px;
+    margin: 0 auto;
+  }
+  .section-works_banner img {
+    max-width: 325px;
+  }
+}

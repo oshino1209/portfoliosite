@@ -1,0 +1,267 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Marcellus', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif,"Times New Roman",'貂明朝テキスト','FOT-筑紫A丸ゴシック Std B',"ヒラギノ角ゴ Pro W3",'平成角ゴシック Std W3';
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 2.4rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+/* header */
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.header__logo {
+  width: 87px;
+  height: 87px;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item:not(:first-child) {
+  margin-left: 24px;
+}
+
+.header__item a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* drawer */
+.drawer {
+  display: none;
+}
+
+/* main */
+.main {
+  padding-top: 87px;
+}
+
+/* mv */
+.mv {
+  background-image: url("../image/top-image(new).jpg");
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-left: 540px;
+}
+
+.mv__copy {
+  position: absolute;
+  top: 250px;
+  left: -356px;
+  text-align: left;
+  font-size: 8.0rem;
+  line-height: 1.6;
+  color: #FF8888;
+}
+
+/* footer */
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__inner {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__item {
+  position: relative;
+  font-size: 3.0rem;
+}
+
+.footer__item:not(:first-child) {
+  margin-left: 32px;
+}
+
+.footer__item:not(:first-child)::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -16px;
+  width: 1px;
+  height: 100%;
+  background-color: #7e7e7e;
+  transform: rotate(20deg);
+}
+
+.footer__item a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media (max-width: 900px) {
+  /* header */
+  .header__logo {
+    position: relative;
+    z-index: 2;
+  }
+
+  .header__drawer {
+    z-index: 1;
+  }
+
+  .header__list {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  .header__item:not(:first-child) {
+  margin-left: 0;
+  }
+  
+  .header__navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-105%);
+    z-index: 9999;
+    width: 70%;
+    height: 100%;
+    padding: 120px 0 0 40px;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+
+  .header__item a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 600;
+  }
+
+  /* drawer */
+  .drawer {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 7px;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border-width: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+
+  .drawer:hover, .drawer:focus {
+    box-shadow: 0 0 .5rem rgba(51, 51, 51, 0.5 );
+  }
+
+  .drawer__line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    margin: auto;
+    background-color: #7e7e7e;
+    transition: background-color .25s;
+  }
+
+  .drawer__line::before, .drawer__line::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7e7e7e;
+    transition: transform .25s;
+  }
+
+  .drawer__line::before {
+    transform: translateY(-8px);
+  }
+
+  .drawer__line::after {
+    transform: translateY(8px);
+  }
+
+  .is-active .drawer .drawer__line {
+    background-color: transparent;
+  }
+
+  .is-active .drawer .drawer__line::before {
+      transform: translateY(0) rotate(45deg);
+  }
+
+  .is-active .drawer .drawer__line::after {
+      transform: translateY(0) rotate(-45deg);
+  }
+
+  .is-active .header__navigation {
+    transform: translateX(0);
+  }
+  
+  /* mv */
+  .mv {
+    height: 600px;
+  }
+
+  .mv__copy {
+    top: 90px;
+    left: 60px;
+    font-size: 5rem;
+  }
+  
+  /* footer */
+  .footer__item {
+    font-size: 1.6rem;
+  }
+}
