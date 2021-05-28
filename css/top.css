@@ -68,7 +68,6 @@
     position: relative;
     z-index: 1;
     padding: 40px 65px;
-    background-color: #fff;
     text-align: left;
     font-size: 1.8rem;
     line-height: 2.4;
@@ -128,7 +127,7 @@
 
 .section-about__name {
   font-size: 2.0rem;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .section-about__text {
@@ -225,9 +224,14 @@
 
 .section-works__container {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100%;
   background-color: #fff;
+}
+
+.section-works__img {
+  width: 100%;
 }
 
 .section-works__link-wrapper {
@@ -285,7 +289,6 @@
 .section-skill__category {
   width: calc(100% / 2 - 40px);
   padding: 40px;
-  background-color: #fff;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -393,35 +396,53 @@
 
 @media (max-width: 900px)  {
   .section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
+
+  .section__title {
+    text-align: center;
+  }
+
+  .section__heading {
+    text-align: center;
+  }
+
   /* concept */
   .section-concept__text {
-    padding: 30px;
+    margin-top: 40px;
+    padding: 0;
     font-size: 1.6rem;
   }
-  
+
   .section-concept__text::after {
     top: 293px;
     left: -70px;
   }
-  
+
   /* about */
+  .section-about__inner {
+    padding: 74px 0 0;
+  }
   .section-about__image {
     width: 100%;
-    text-align: center
+    margin-bottom: 16px;
+    text-align: center;
   }
-  
+
   .section-about__description {
     width: calc(100% - 0%);
     margin-left: 0px;
   }
-  
+
+  .section-about__name {
+    text-align: center;
+  }
+
   .section-about__introduction {
     flex-wrap: wrap;
   }
-  
+
   .section-about__list {
     flex-direction: column;
   }
@@ -434,7 +455,7 @@
   .section-works__list {
     padding-left: 0;
   }
-  
+
   .section-works__item {
     width: 100%;
     margin-bottom: 48px;
@@ -444,8 +465,8 @@
     margin-left: 0;
   }
 
-  .section-works__img {
-    margin-bottom: 24px;
+  .section-works__container {
+    height: auto;
   }
 
   .section-works__img img {
@@ -456,22 +477,33 @@
     display: none;
   }
 
+  .section-skill::before {
+    right: 30px;
+    left: inherit;
+    transform: scaleY(-1);
+  }
+
+  .section-skill::after {
+    content: none;
+  }
+
   .section-skill__list {
     flex-direction: column;
   }
 
   .section-skill__category {
     width: 100%;
+    padding: 0;
   }
 
-  .section-skill__category:not(:first-child) {
+  .section-skill__category {
     margin-top: 40px;
     margin-left: 0;
   }
   .section-skill__description {
     font-size: 1.6rem;
   }
-  
+
   .section-contact__container {
     margin-top: 80px;
     padding-top: 0;
@@ -488,15 +520,15 @@
     padding: 16vw;
     word-break: break-all;
   }
-  
+
   .section-contact__text {
     font-size: 1.6rem;
   }
-  
+
   .section-contact__message {
-    font-size: 1.6rem;
+    font-size: 3.2rem;
   }
-  
+
   .section-contact__bg {
     display: none;
   }
